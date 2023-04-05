@@ -5,7 +5,7 @@
 
 // Variable for Jon and Jamie Attack
 let jonSnowAttack = 25, jonSnowDefense = 0, jonSnowHealth = 100;
-let jamieLannisterAttack = 35;
+let jamieLannisterAttack = 55;
 
 // Before the battle begins, Jon and Jamie decide to compare attack strengths to get insight into who might win this battle.
 // Using an if-else statement, console.log who has the greater attack strength.
@@ -73,6 +73,7 @@ for(i = 0; i < 5; i++){
 }
 
 // Demonstrate a while loop that will have Jamie attack Jon until Jon is slain. You will need to comment out the above for loops for these to run properly.
+console.log(jonSnowHealth, jamieLannisterAttack, jonSnowDefense);
 
 while(jonSnowHealth > 0){
     jonSnowHealth -= jamieLannisterAttack - jonSnowDefense;

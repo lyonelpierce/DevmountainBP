@@ -11,14 +11,14 @@ let lovesCode = true;
 
 if(lovesCode === true){
   console.log('I love to code!');
-} else {
+}else {
   console.log('Coding has its challenges.');
 }
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29;
 var brittanisAge = 34;
-var amysBirthYear = 1991;         // Should be 1994
+var amysBirthYear = 1991;
 var brittanisBirthYear = 1986;
 
 ////////// PROBLEM 2 //////////
@@ -143,7 +143,7 @@ while(score < 7){
 
 let changeMyMind = true;
 
-if(changeMyMind === true){
+if(changeMyMind){
   changeMyMind = false;
 }else{
   changeMyMind = true;
@@ -169,11 +169,10 @@ let z = 5;
 //CODE HERE
 
 while(z > 0){
-  let i = z, countdown = '';
+  let i = z;
   while (i > 0){
-    countdown += i + ',';
+    console.log(i);
     i--;
   }
-  console.log(countdown);
   z--;
 }
