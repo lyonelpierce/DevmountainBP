@@ -1,4 +1,3 @@
-const array = [-11, 55, 11, 2, 37, -4];
 let smallest = array[0], largest = array[0];
 
 for (let i = 1; i <= array.length; i++) {
