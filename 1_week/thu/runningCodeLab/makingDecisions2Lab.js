@@ -17,7 +17,7 @@ let firstItem = arr[0];
 
 //Code Here
 
-lastItemRemoved = arr.pop();
+let lastItemRemoved = arr.pop();
 console.log(arr);
 
 ////////// PROBLEM 3 //////////
@@ -31,7 +31,7 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-for (i = 0; i < family.length; i++){
+for (let i = 0; i < family.length; i++){
   console.log(family[i]);
 }
 
@@ -48,7 +48,7 @@ let evensArr = []
 
 //Code Here
 
-for(i = 0; i < nums.length; i++){
+for(let i = 0; i < nums.length; i++){
   if((nums[i] % 2) === 0){
     evensArr.push(nums[i]);
   }
@@ -100,7 +100,13 @@ let someNum = myFavoriteNumbers[4];
 
 //Code Here
 
-if(myFavoriteNumbers.length < 7){
+// Check for undefined
+for(i = 0; i < 7; i++){
+  console.log(myFavoriteNumbers[i]);
+}
+
+//  Check length of myFavoriteNumbers
+if(myFavoriteNumbers.length < 7){  
   console.log('There are not enough elements in this array');
 }else{
   someNum = myFavoriteNumbers[6];
@@ -118,7 +124,7 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 for(i = 0; i < listOfNumbers.length; i++){
   if((listOfNumbers[i] % 3) === 0){
-    console.log(listOfNumbers[i]);
+    console.log(`${listOfNumbers[i]}, is divisible by 3.`);
   }
 }
 
@@ -132,7 +138,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-for(i = letters.length; i >= 0; i--){
+for(i = letters.length-1; i >= 0; i--){
   console.log(letters[i]);
 }
 
@@ -175,6 +181,7 @@ switch(letterGrade){
     break;
   default:
     console.log('Not an eligible grade.');
+    break;
 }
 
 ////////// PROBLEM 11 //////////
@@ -203,7 +210,7 @@ switch(letterGrade){
 
 //Code Here
 
-for(i = 0; i <= 100; i++){
+for(i = 1; i <= 100; i++){
   if(i % 3 === 0 && i % 5 === 0){
     console.log('Devmountain');
   }else if(i % 3 === 0){
