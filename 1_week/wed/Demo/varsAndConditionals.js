@@ -26,7 +26,7 @@ if(jonSnowHealth <= jamieLannisterAttack){
     console.log(jonSnowHealth);
 }
 
-// Jon Snow, adamant he does not want to fight Jamie (can you blame him?), picks up a shield to help defend himself. Increase Jon’s defense by 25.
+// Jon Snow, adamant he does not want to fight Jamie (can you blame him?), he picks up a shield to help defend himself. Increase Jon’s defense by 25.
 jonSnowDefense += 25;
 
 // Jamie attacks again - use an if/else to determine if Jon Snow can survive the attack. Make sure to account for Jon’s defense. If he does not, console.log “Jon Snow has been slain.” Otherwise, console.log Jon Snow’s health.
