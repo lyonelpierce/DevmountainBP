@@ -87,7 +87,7 @@ console.log("Compare: ", compareNums(9, 1));
 
 //CODE HERE
 function add(num1, num2) {
-  num1 = Number(num1);
+  num1 = parseInt(num1);
   num2 = parseInt(num2);
   return num1 + num2;
 }
@@ -251,7 +251,7 @@ let oddChecker = thatsOdd(2);
 
 //CODE HERE
 let bestMovie = (MOVIEPARAM) =>
-  console.log(`${MOVIEPARAM} is the best movie ever!`);
+  console.log(`${MOVIEPARAM} is the best movie ever!`); // PRETTIER MAKES IT TWO LINES
 bestMovie("Interstellar");
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -302,6 +302,7 @@ let loser = "Glimmer";
 //CODE HERE
 let theEliminator = (contestants, loser) => {
   for (let i = 0; i < contestants.length; i++) {
+    // IF CONTESTANTS CONTAINS LOSER NAME WE SPLICE THE NAME FROM THE ARRAY
     if (contestants.includes(loser)) {
       contestants.splice(3, 1);
     }
@@ -361,11 +362,12 @@ let choco = 0;
 
 function buyChoco(gold) {
   for (gold; gold >= 3; gold -= 3) {
+    // INCREASE THE COUNT EACH LOOP TILL IT RUNS OUT OF MONEY
     choco++;
   }
   console.log("You can buy:", choco);
 }
-totalFrogs = buyChoco(3);
+totalFrogs = buyChoco(6);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -402,10 +404,16 @@ let duck = "cute";
 
 function bathroom() {
   let rubberDuck = "squeaky";
+  // console.log(rubberDuck);
+  // console.log(sailorDuck);
   function bathtub() {
     let sailorDuck = "nautical";
+    // console.log(sailorDuck);
+    // console.log(rubberDuck);
   }
+  // bathtub();
 }
+// bathroom();
 
 function pond() {
   let realDuck = "fluffy";
