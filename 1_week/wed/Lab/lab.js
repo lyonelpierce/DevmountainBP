@@ -9,10 +9,10 @@
 //CODE HERE
 let lovesCode = true;
 
-if(lovesCode === true){
-  console.log('I love to code!');
-}else {
-  console.log('Coding has its challenges.');
+if (lovesCode === true) {
+  console.log("I love to code!");
+} else {
+  console.log("Coding has its challenges.");
 }
 
 // For problems 2-3 use the following lines of code:
@@ -28,12 +28,12 @@ var brittanisBirthYear = 1986;
 */
 
 //CODE HERE
-if(amysAge > brittanisAge){
-  console.log('Amy is older');
-}else if(amysAge < brittanisAge){
-  console.log('Brittani is older');
-}else {
-  console.log('Amy & Britanni are the same age');
+if (amysAge > brittanisAge) {
+  console.log("Amy is older");
+} else if (amysAge < brittanisAge) {
+  console.log("Brittani is older");
+} else {
+  console.log("Amy & Britanni are the same age");
 }
 
 ////////// PROBLEM 3 //////////
@@ -43,10 +43,10 @@ if(amysAge > brittanisAge){
 */
 
 //CODE HERE
-if(amysBirthYear === brittanisBirthYear){
-  console.log('Amy & Brittani were born in the same year');
-}else{
-  console.log('Amy & Brittani were not born in the same year');
+if (amysBirthYear === brittanisBirthYear) {
+  console.log("Amy & Brittani were born in the same year");
+} else {
+  console.log("Amy & Brittani were not born in the same year");
 }
 
 ////////// PROBLEM 4 //////////
@@ -60,20 +60,18 @@ let rain = true;
 */
 
 //CODE HERE
-if(temperature >= 80 && rain === true){
-  console.log('Wear a T-Shirt and take an umbrella');
-}else if(temperature > 60 && temperature < 80 && rain === true){
-  console.log('Wear a rain-jacket');
-}else if(temperature < 60 && rain === true){
-  console.log('Wear a jacket and carry an umbrella');
-}
-
-else if(temperature >= 80 && rain === false){
-  console.log('Wear a bermuda, no rain is expected today');
-}else if( temperature > 60 && temperature < 80 && rain === false){
-  console.log('Wear your BBQ gloves, no need for an umbrella');
-}else{
-  console.log('Wear a jacket, it is cold');
+if (temperature >= 80 && rain === true) {
+  console.log("Wear a T-Shirt and take an umbrella");
+} else if (temperature > 60 && temperature < 80 && rain === true) {
+  console.log("Wear a rain-jacket");
+} else if (temperature < 60 && rain === true) {
+  console.log("Wear a jacket and carry an umbrella");
+} else if (temperature >= 80 && rain === false) {
+  console.log("Wear a bermuda, no rain is expected today");
+} else if (temperature > 60 && temperature < 80 && rain === false) {
+  console.log("Wear your BBQ gloves, no need for an umbrella");
+} else {
+  console.log("Wear a jacket, it is cold");
 }
 
 ////////// PROBLEM 5 //////////
@@ -83,7 +81,7 @@ else if(temperature >= 80 && rain === false){
 */
 
 //CODE HERE
-for(let i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++) {
   console.log(`[${i}] Hello`);
 }
 
@@ -94,7 +92,7 @@ for(let i = 0; i < 10; i++){
 */
 
 //CODE HERE
-for(let i = 1; i < 11; i++){
+for (let i = 1; i < 11; i++) {
   console.log(i);
 }
 
@@ -110,7 +108,7 @@ for(let i = 1; i < 11; i++){
 */
 
 //CODE HERE
-for(let i = 10; i > -1; i--){
+for (let i = 10; i > -1; i--) {
   console.log(i);
 }
 
@@ -125,7 +123,7 @@ let passingScore = 7;
 
 //CODE HERE
 
-while(score < 7){
+while (score < 7) {
   console.log(`[${score}] Your score is not high enough`);
   score++;
 }
@@ -143,13 +141,12 @@ while(score < 7){
 
 let changeMyMind = true;
 
-if(changeMyMind){
+if (changeMyMind) {
   changeMyMind = false;
-}else{
+} else {
   changeMyMind = true;
 }
 console.log(changeMyMind);
-
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
@@ -168,9 +165,9 @@ let z = 5;
 
 //CODE HERE
 
-while(z > 0){
+while (z > 0) {
   let i = z;
-  while (i > 0){
+  while (i > 0) {
     console.log(i);
     i--;
   }

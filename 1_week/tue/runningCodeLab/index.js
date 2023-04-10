@@ -16,9 +16,6 @@
     each other. 
 */
 
-
-
-
 ///// PROBLEM 1 /////
 /*
     Create a variable that will store the download 
@@ -72,7 +69,7 @@ console.log(`Internet Speed: ${speed}mb`);
 
 // CODE HERE
 
-let faveSnack = 'Doritos';
+let faveSnack = "Doritos";
 
 ///// PROBLEM 4 /////
 /*
@@ -88,7 +85,7 @@ let faveSnack = 'Doritos';
 
 // CODE HERE
 
-let faveDrink = 'Seltzer Water';
+let faveDrink = "Seltzer Water";
 
 ///// PROBLEM 5 /////
 /*
@@ -134,7 +131,10 @@ const private = true;
 
 // CODE HERE
 
-let netflix = 15, hulu = 7, disneyPlus = 5, youtubePremium = peacock = 10;
+let netflix = 15,
+  hulu = 7,
+  disneyPlus = 5,
+  youtubePremium = (peacock = 10);
 
 ///// PROBLEM 7 /////
 /*
@@ -171,7 +171,7 @@ console.log(`Monthly Expenses: $${total}.00`);
 
 // CODE HERE
 
-hulu = hulu - hulu, peacock = youtubePremium - disneyPlus, netflix -= 7;
+(hulu = hulu - hulu), (peacock = youtubePremium - disneyPlus), (netflix -= 7);
 
 ///// PROBLEM 9 /////
 /*
@@ -186,7 +186,6 @@ hulu = hulu - hulu, peacock = youtubePremium - disneyPlus, netflix -= 7;
 
 // CODE HERE
 
-
 let newTotal = netflix + hulu + disneyPlus + peacock + youtubePremium;
 
 ///// PROBLEM 9: Bonus Section /////
@@ -200,8 +199,8 @@ let newTotal = netflix + hulu + disneyPlus + peacock + youtubePremium;
     and compare the numbers.
 */
 
-console.log('Total: ', total);
-console.log('New Total: ', newTotal);
+console.log("Total: ", total);
+console.log("New Total: ", newTotal);
 
 /*
     What is happening here? When we run a file 
@@ -220,7 +219,6 @@ console.log('New Total: ', newTotal);
     This concept can be confusing, but will sink
     in over time!
 */
-
 
 ///// PROBLEM 10 /////
 /*
@@ -242,5 +240,5 @@ console.log('New Total: ', newTotal);
 
 // CODE HERE
 
-let savings = ((total - newTotal) / total ) * 100;
+let savings = ((total - newTotal) / total) * 100;
 console.log(`Savings Percentage: ${savings.toFixed(2) + "%"}`);

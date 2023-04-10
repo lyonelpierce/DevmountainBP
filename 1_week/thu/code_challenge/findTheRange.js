@@ -13,10 +13,10 @@
 // console.log(`Smallest: ${smallest}`);
 // console.log(`Largest: ${largest}`);
 
-function findRange(numbers){
+function findRange(numbers) {
   let max = Math.max(...numbers);
   let min = Math.min(...numbers);
-  return {max, min};
+  return { max, min };
 }
 
 console.log(findRange([-11, 55, 11, 2, 37, -4]));

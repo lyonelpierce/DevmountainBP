@@ -34,24 +34,24 @@
 let away = 115;
 let home = 115;
 
-if(away > home){
-    console.log('Away team wins!!');
-} else if( home > away) {
-    console.log('Home team wins!!');
+if (away > home) {
+  console.log("Away team wins!!");
+} else if (home > away) {
+  console.log("Home team wins!!");
 } else {
-    console.log('Tie');
+  console.log("Tie");
 }
 
-let age = 10
-let age1 = 20
-let age2 = 21
+let age = 10;
+let age1 = 20;
+let age2 = 21;
 
-if(age >= age1){
-    console.log(age);
+if (age >= age1) {
+  console.log(age);
 }
-if(age === age2){
-    console.log('It is the same');
+if (age === age2) {
+  console.log("It is the same");
 }
-if(age !== age1){
-    console.log('It is not the same!');
+if (age !== age1) {
+  console.log("It is not the same!");
 }
