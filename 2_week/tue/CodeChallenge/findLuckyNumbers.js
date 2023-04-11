@@ -17,7 +17,6 @@ function generateRandomNumbers(n) {
       numbers.push(randomNumber);
     }
   }
-
   console.log(numbers);
 }
 
