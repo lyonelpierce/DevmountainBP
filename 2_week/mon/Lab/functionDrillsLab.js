@@ -303,8 +303,9 @@ let loser = "Glimmer";
 let theEliminator = (contestants, loser) => {
   for (let i = 0; i < contestants.length; i++) {
     // IF CONTESTANTS CONTAINS LOSER NAME WE SPLICE THE NAME FROM THE ARRAY
-    if (contestants.includes(loser)) {
-      contestants.splice(3, 1);
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1);
+      i--;
     }
   }
   console.log(contestants);
