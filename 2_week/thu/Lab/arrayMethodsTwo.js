@@ -10,7 +10,7 @@ let numbers = [40, 68, 14, 90, 49];
 */
 
 // CODE HERE
-
+numbers.forEach((num) => console.log(num / 2));
 
 ////////// PROBLEM 2 //////////
 
@@ -23,7 +23,8 @@ let numbers = [40, 68, 14, 90, 49];
 */
 
 // CODE HERE
-
+const arr = numbers.map((num) => num / 2);
+console.log(arr);
 
 ////////// PROBLEM 3 //////////
 
@@ -50,7 +51,8 @@ let cities = [
 */
 
 // CODE HERE
-
+const citiesFilter = cities.filter((city) => city[city.length - 1] === "i");
+console.log(citiesFilter);
 
 ////////// PROBLEM 4 //////////
 
@@ -87,7 +89,16 @@ let fruits = [
 
 // CODE HERE
 
-
+fruits.forEach((fruit, index) => {
+  // const index = fruits.indexOf(fruit);
+  if (fruit.color === "red") {
+    console.log(`The fruit with index ${index} is an apple`);
+  } else if (fruit.color === "orange") {
+    console.log(`The fruit with index ${index} is an orange`);
+  } else {
+    console.log(`The fruit with index ${index} is neither apple or orange`);
+  }
+});
 
 /* 
     Run the code in node to see the result. Then, copy and paste the result below.
@@ -100,8 +111,6 @@ let fruits = [
 */
 
 // COPY AND PASTE THE RESULT FROM YOUR CONSOLE (NODE CONSOLE IS YOUR TERMINAL) HERE (AS A MULTI LINES COMMENT)
-
-
 
 ////////// PROBLEM 5 //////////
 
@@ -145,7 +154,9 @@ let foods = [
 */
 
 // CODE HERE
-
+const total = foods
+  .filter((food) => food.tags.includes("rice"))
+  .reduce((c, a) => c + a.price, 0);
 
 // THE TOTAL
-
+console.log(total);
