@@ -97,9 +97,7 @@ const monstersInYourPocket = [
 */
 
 // CODE HERE
-const myStrongest = monstersInYourPocket.filter((monster) => {
-  return monster.CP > 200;
-});
+const myStrongest = monstersInYourPocket.filter((monster) => monster.CP > 200);
 console.log(myStrongest);
 
 ////////// PROBLEM 5 //////////
