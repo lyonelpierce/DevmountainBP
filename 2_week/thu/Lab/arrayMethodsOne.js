@@ -160,8 +160,13 @@ const purchases = [
 */
 
 // CODE HERE
-const bobsPurchases = purchases.filter(
-  (purchases) => purchases.owner === "Bob"
-);
-const bobsTotal = bobsPurchases.reduce((a, c) => a + c.price, 0);
+// const bobsPurchases = purchases.filter(
+//   (purchases) => purchases.owner === "Bob"
+// );
+// const bobsTotal = bobsPurchases.reduce((a, c) => a + c.price, 0);
+
+const bobsTotal = purchases
+  .filter((purchases) => purchases.owner === "Bob")
+  .reduce((a, c) => a + c.price, 0);
+
 console.log(bobsTotal);
