@@ -23,21 +23,21 @@
 // }
 
 // CONSOLE LOG AND CALL FUNCTION
-// const hasMoreVowels = (word) =>
-//   word
-//     .split("") // ['C', 'a', 't']
-//     .reduce(
-//       // Reduce to count
-//       (acc, val) =>
-//         ["a", "e", "i", "o", "u"].indexOf(val.toLowerCase()) !== -1
-//           ? acc + 1
-//           : acc,
-//       0
-//     ) >
-//   word.length / 2;
-
 const hasMoreVowels = (word) =>
-  word.split("").filter((x) => ["a", "e", "i", "o", "u"].includes(x)).length >=
+  word
+    .split("") // ['C', 'a', 't']
+    .reduce(
+      // Reduce to count
+      (acc, val) =>
+        ["a", "e", "i", "o", "u"].indexOf(val.toLowerCase()) !== -1
+          ? acc + 1
+          : acc,
+      0
+    ) >
   word.length / 2;
+
+// const hasMoreVowels = (word) =>
+//   word.split("").filter((x) => ["a", "e", "i", "o", "u"].includes(x)).length >=
+//   word.length / 2;
 
 console.log(hasMoreVowels("Caaat"));
