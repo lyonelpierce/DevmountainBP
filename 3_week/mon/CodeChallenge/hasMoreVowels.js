@@ -2,11 +2,10 @@
 function hasMoreVowels(word) {
   // SPECIFY VOWELS
   const vowels = ["a", "e", "i", "o", "u"];
-  // INITIALIZE VOWEL COUNTER
+  // INITIALIZE VOWEL & CONSONANT COUNTER
   let vowelCount = 0;
-  // INITIALIZE CONSONANT COUNTER
   let consonantCount = 0;
-  // LOOP OVER EACH CHAR
+  // LOOP OVER EACH CHARACTER
   for (let i = 0; i < word.length; i++) {
     // CHECK IF THE CHAR IS INCLUDED IN VOWELS ARRAY
     if (vowels.includes(word[i])) {
