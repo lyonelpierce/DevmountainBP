@@ -1,30 +1,34 @@
 console.log("Hello World!");
 
 const form = document.querySelector("form");
-const addBtn = document.getElementById("addBtn");
-const movieInput = document.getElementById("movie");
+const addBtn = document.querySelector("button");
+const movieInput = document.querySelector("input");
 const movieList = document.querySelector("ul");
-const message = document.querySelector("#message");
+const message = document.getElementById("message");
 
 function addMovie(event) {
   event.preventDefault();
+  if (movieInput.value === ''){
+    alert('Enter a movie name');
+  }
+  else{
+    const movie = document.createElement("li");
 
-  const movie = document.createElement("li");
-
-  const movieTitle = document.createElement("span");
-  movieTitle.textContent = movieInput.value;
-  movie.appendChild(movieTitle);
-
-  const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "X";
-  deleteBtn.addEventListener("click", deleteMovie);
-  movie.appendChild(deleteBtn);
-
-  movieList.appendChild(movie);
-
-  movieTitle.addEventListener("click", crossOffMovie);
-
-  movieInput.value = "";
+    const movieTitle = document.createElement("span");
+    movieTitle.textContent = movieInput.value;
+    movie.appendChild(movieTitle);
+  
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "X";
+    deleteBtn.addEventListener("click", deleteMovie);
+    movie.appendChild(deleteBtn);
+  
+    movieList.appendChild(movie);
+  
+    movieTitle.addEventListener("click", crossOffMovie);
+  
+    movieInput.value = "";
+  }
 }
 
 function deleteMovie(event) {
