@@ -51,4 +51,4 @@ function revealMessage() {
 }
 
 form.addEventListener("submit", addMovie);
-addBtn.addEventListener("click", addMovie);
+// addBtn.addEventListener("click", addMovie); // type="button"
