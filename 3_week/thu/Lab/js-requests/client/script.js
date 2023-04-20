@@ -200,3 +200,21 @@ queryButton.addEventListener("click", getRequest);
 */
 
 // CODE HERE
+let foodForm = document.getElementById("food-form");
+
+foodForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  createFood();
+});
+
+let createFood = () => {
+  let foodInput = document.getElementById("food-input");
+  let body = { newFood: foodInput.value };
+  axios.post("http://localhost:3000/food", body).then((res) => {
+    let foodList = document.getElementById("food-list");
+    let newFoodItem = document.createElement("li");
+    newFoodItem.textContent = body.newFood;
+    foodList.appendChild(newFoodItem);
+  });
+  foodInput.value = "";
+};
