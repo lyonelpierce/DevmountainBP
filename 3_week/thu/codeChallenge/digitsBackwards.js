@@ -1,6 +1,6 @@
 // DIGITS BACKWARDS
 function printDigits(num) {
-    // IF NUM LESS THAN 0 THEN NUM TO POSITIVE
+    // IF NUM is NEGATIVE, NUM TO POSITIVE
     if (num < 0) {
       num = -num;
     }
