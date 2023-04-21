@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Lyonel Pierce Pizza</h1>
+    </header>
+    <main>
+      <section class="hero-section">
+        <img
+          id="hero-image"
+          src="https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?cs=srgb&dl=cheese-crust-delicious-2619967.jpg&fm=jpg"
+          alt="Pizza"
+          id="hero-section"
+        />
+      </section>
+      <a href="#pizza-display"><button class="buy-btn">Buy Pizza</button></a>
+      <section id="pizza-display">
+        <section class="pizza-item">
+          <img
+            src="https://th.bing.com/th/id/R.24d9854ac51a47973f3b39ed76a6e064?rik=uQ68HAhslE49ow&riu=http%3a%2f%2fwww.pngplay.com%2fwp-content%2fuploads%2f2%2fPepperoni-Pizza-Free-PNG.png&ehk=1ZRrA6y55tJq19jzWFpjZthHov5RdztgYNJ5Fb5nWp4%3d&risl=&pid=ImgRaw&r=0"
+            alt="Pepperoni Pizza"
+            value="Pepperoni"
+          />
+          <p>Pepperoni Pizza</p>
+        </section>
+        <section class="pizza-item" value="Hawaiian">
+          <img
+            src="https://th.bing.com/th/id/OIP.d1lEBA2Iuoy6sNgyxKPLXAHaHa?pid=ImgDet&rs=1"
+            alt="Hawaiian Pizza"
+            value="Hawaiian"
+          />
+          <p>Hawaiian Pizza</p>
+        </section>
+        <section class="pizza-item" value="BBQ">
+          <img
+            src="https://th.bing.com/th/id/OIP.Ql94lWJqePpyDoZFBUMAnwHaHW?pid=ImgDet&rs=1"
+            alt="BBQ Pizza"
+            value="BBQ"
+          />
+          <p>BBQ Pizza</p>
+        </section>
+      </section>
+      <form class="form-section">
+        <h2>Submit Your Recomendations</h2>
+        <label for="pizza-name">Pizza Name</label>
+        <input type="text" id="pizza-name" />
+        <label for="pizza-picture">Pizza Picture</label>
+        <input type="input" id="pizza-picture" />
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
