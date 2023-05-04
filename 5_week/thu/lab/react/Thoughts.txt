@@ -1,0 +1,10 @@
+What did you like about React? What didn't you like?
+----------------------------------------------------------
+I have some experience with react, and it is very useful to split the layout of webpages (creating components), so we don't have to write the same code multiple times, we can re use the components instead and this will improve perfomance too. In the trial I saw that it is very easy to send data between components without writing too much code.
+
+What I don't like is the amount of files that we create to divide the web page in components.
+
+
+What would pursuing React look like for you?
+----------------------------------------------------------
+I definetly would like to learn react deeper. If I could choose between back-end and front-end I would go full-stack :D!, since that is not posible I would like to go with back-end since I have more experience using back-end frameworks like django and laravel.

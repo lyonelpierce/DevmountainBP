@@ -1,0 +1,11 @@
+What did you like about Java? What didn't you like?
+----------------------------------------------------------
+
+I liked the fact that we have to state the type of the variable that we are declaring. Since I have experience in laravel and django, declaring the variables type was not hard at all.
+
+What I dislike it is that is a compiler language so we have to wait to compile first, it takes too many time.
+
+
+What would pursuing Java look like for you?
+----------------------------------------------------------
+Java is safer than other languages and has been around for a long time. I believe big companies require java developers for their projects because of security, and I think there is a big opportunity for developers. I definetly want to lear more about Java.
